@@ -267,7 +267,7 @@ p, span, h1, h2, h3, h4, h5, h6 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
-@media(maxx-width:1200px) and (max-width:1440px){
+@media(min-width:1200px) and (max-width:1399.98px){
   html{
     font-size: 58%;
   }
