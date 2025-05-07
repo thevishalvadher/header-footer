@@ -271,6 +271,9 @@ p, span, h1, h2, h3, h4, h5, h6 {
   html{
     font-size: 58%;
   }
+  .header__main-nav-list{
+    gap: 2rem;
+  }
 }
 @media(max-width:575.98px){
   html{
