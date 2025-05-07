@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>System Treff</title>
+
+  <!-- google fonts preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- google fonts stylesheets (roboto and saira Condensed) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- bootstrap 5 css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header | text-white">
+    <div class="header__top | bg-neutral-800">
+      <div class="container">
+        <div class="d-flex align-items-center gap-5">
+          <div class="d-none d-xl-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-4">
+              <img src="img/shield-ic.webp" alt="Shield icon" height="25" width="21"
+                class="object-fit-contain img-white">
+              <p>30 Tage Geld-zurück-Garantie & 3 Jahre Garantie</p>
+            </div>
+          </div>
+          <nav class="header__top-nav | ms-xl-auto d-flex align-items-center gap-5 flex-grow-1 flex-xl-grow-0"
+            aria-label="Top Navigation">
+            <ul class="header__top-nav-list | d-none d-xl-flex align-items-center me-xxl-5 pe-xxl-4">
+              <li><a href="#" class="header__top-link | py-3">Angebote</a></li>
+              <li><a href="#" class="header__top-link | py-3">Info Center</a></li>
+              <li><a href="#" class="header__top-link | py-3">Blog</a></li>
+            </ul>
+            <ul class="header__top-dropdown-list | d-flex align-items-center gap-xl-5 gap-4 flex-grow-1 flex-xl-grow-0">
+              <li class="me-2 me-xl-0">
+                <div class="dropdown">
+                  <button class="dropdown-toggle | d-flex align-items-center gap-xl-4 gap-3 text-white py-3"
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open user account menu">
+                    <img src="img/user-ic.webp" alt="User icon" height="18" width="16"
+                      class="object-fit-contain img-white">Anmelden
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Option 1</a></li>
+                    <li><a class="dropdown-item" href="#">Option 2</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="me-2 me-xl-0 ms-auto">
+                <div class="dropdown">
+                  <button class="dropdown-toggle | d-flex align-items-center gap-3 text-uppercase text-white py-3"
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language">
+                    <img src="img/flag.webp" alt="German flag" height="14" width="22" class="object-fit-contain">DE
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Option 1</a></li>
+                    <li><a class="dropdown-item" href="#">Option 2</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="me-2 me-xl-0">
+                <a href="#" class="d-flex align-items-center gap-3 text-white py-3" aria-label="Shopping cart">
+                  <img src="img/shopping-bag-ic.webp" alt="Shopping bag" height="19" width="17"
+                    class="object-fit-contain img-white">
+                  <p>0,00 €</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="Search the website" class="py-3">
+                  <img src="img/search-ic.webp" alt="Search icon" height="17" width="17"
+                    class="object-fit-contain img-white">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header__main | bg-neutral-1000">
+      <div class="container | position-relative">
+        <nav class="header__main-nav | d-flex align-items-center gap-5" aria-label="Main Navigation">
+          <a href="#" class="header__logo-box" aria-label="Systemtreff homepage">
+            <img src="img/logo.webp" alt="Systemtreff logo" class="header__logo | object-fit-contain" height="23"
+              width="207">
+          </a>
+          <button
+            class="header__toggle-btn | d-xl-none d-flex justify-content-center align-items-center flex-column ms-auto"
+            aria-label="header menu open button">
+            <span class="header__toggle-line header__toggle-line--1"></span>
+            <span class="header__toggle-line header__toggle-line--2"></span>
+            <span class="header__toggle-line header__toggle-line--3"></span>
+          </button>
+          <div class="header__collapse | flex-grow-1">
+            <ul class="header__main-nav-list | d-xl-flex">
+              <li class="header__main-nav-item">
+                <div class="dropdown">
+                  <a href="#" class="header__main-link">Office PC</a>
+                  <button class="dropdown-toggle header__main-link-ic d-xl-none" data-bs-toggle="dropdown"
+                    aria-expanded="false" tabindex="0" aria-label="Toggle submenu">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__main-nav-item">
+                <div class="dropdown">
+                  <a href="#" class="header__main-link">Gaming PC</a>
+                  <button class="dropdown-toggle header__main-link-ic d-xl-none" data-bs-toggle="dropdown"
+                    aria-expanded="false" tabindex="0" aria-label="Toggle submenu">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__main-nav-item">
+                <div class="dropdown">
+                  <a href="#" class="header__main-link">Komplettsets</a>
+                  <button class="dropdown-toggle header__main-link-ic d-xl-none" data-bs-toggle="dropdown"
+                    aria-expanded="false" tabindex="0" aria-label="Toggle submenu">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__main-nav-item">
+                <div class="dropdown">
+                  <a href="#" class="header__main-link">PC Konfigurator</a>
+                  <button class="dropdown-toggle header__main-link-ic d-xl-none" data-bs-toggle="dropdown"
+                    aria-expanded="false" tabindex="0" aria-label="Toggle submenu">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__main-nav-item">
+                <div class="dropdown">
+                  <a href="#" class="header__main-link">KI PC</a>
+                  <button class="dropdown-toggle header__main-link-ic d-xl-none" data-bs-toggle="dropdown"
+                    aria-expanded="false" tabindex="0" aria-label="Toggle submenu">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__main-nav-item">
+                <div class="dropdown">
+                  <a href="#" class="header__main-link">Streaming PC</a>
+                  <button class="dropdown-toggle header__main-link-ic d-xl-none" data-bs-toggle="dropdown"
+                    aria-expanded="false" tabindex="0" aria-label="Toggle submenu">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__main-nav-item">
+                <div class="dropdown">
+                  <a href="#" class="header__main-link">Silent PC</a>
+                  <button class="dropdown-toggle header__main-link-ic d-xl-none" data-bs-toggle="dropdown"
+                    aria-expanded="false" tabindex="0" aria-label="Toggle submenu">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__main-nav-item">
+                <div class="dropdown">
+                  <a href="#" class="header__main-link">Mini PC</a>
+                  <button class="dropdown-toggle header__main-link-ic d-xl-none" data-bs-toggle="dropdown"
+                    aria-expanded="false" tabindex="0" aria-label="Toggle submenu">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__main-nav-item">
+                <div class="dropdown">
+                  <a href="#" class="header__main-link">Express PCs</a>
+                  <button class="dropdown-toggle header__main-link-ic d-xl-none" data-bs-toggle="dropdown"
+                    aria-expanded="false" tabindex="0" aria-label="Toggle submenu">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+
+  <!-- main content -->
+  <main class="py-5">
+  </main>
+  <!-- /main content -->
+
+  <!-- footer -->
+  <footer class="footer | bg-neutral-1000 text-white py-5">
+    <div class="footer__top">
+      <div class="container">
+        <div class="d-xl-flex align-items-center justify-content-between gap-5">
+          <h2 class="sub-title">User Partner</h2>
+          <ul
+            class="footer__partner-list | d-flex align-items-center flex-wrap column-gap-5 row-gap-4 mt-4 mt-xl-0 mb-5">
+            <li><img src="img/partner-amd.webp" alt="AMD logo" height="26" width="108"
+                class="object-fit-contain partner-amd-logo"></li>
+            <li><img src="img/partner-asus.webp" alt="ASUS logo" height="22" width="110"
+                class="object-fit-contain partner-asus-logo"></li>
+            <li><img src="img/partner-gigabyte.webp" alt="Gigabyte logo" height="19" width="155"
+                class="object-fit-contain partner-gigabyte-logo"></li>
+            <li><img src="img/partner-intel.webp" alt="Intel logo" height="45" width="68"
+                class="object-fit-contain partner-intel-logo"></li>
+            <li><img src="img/partner-msi.webp" alt="MSI logo" height="24" width="102"
+                class="object-fit-contain partner-msi-logo"></li>
+            <li><img src="img/partner-nvidia.webp" alt="NVIDIA logo" height="33" width="157"
+                class="object-fit-contain partner-nvidia-logo"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__link-box-main | d-grid justify-content-between">
+          <div class="footer__link-box">
+            <h3 class="footer__heading">Top Kategorien</h3>
+            <ul class="footer__link-list">
+              <li><a href="#" class="footer__link">Office Pc</a></li>
+              <li><a href="#" class="footer__link">Gaming PC</a></li>
+              <li><a href="#" class="footer__link">Komplettsets</a></li>
+              <li><a href="#" class="footer__link">PC Konfigurator</a></li>
+              <li><a href="#" class="footer__link">KI PC</a></li>
+              <li><a href="#" class="footer__link">Streaming PC</a></li>
+              <li><a href="#" class="footer__link">Silent PC</a></li>
+              <li><a href="#" class="footer__link">Mini PC</a></li>
+            </ul>
+          </div>
+          <div class="footer__link-box">
+            <h3 class="footer__heading">Special Edition</h3>
+            <ul class="footer__link-list">
+              <li><a href="#" class="footer__link">powered by MSI</a></li>
+              <li><a href="#" class="footer__link">powered by WD_BLACK</a></li>
+              <li><a href="#" class="footer__link">MSI Project Zero</a></li>
+              <li><a href="#" class="footer__link">Corsair iCUE link</a></li>
+              <li><a href="#" class="footer__link">powered by ASUS</a></li>
+              <li><a href="#" class="footer__link">Corsair iCUE systems</a></li>
+              <li><a href="#" class="footer__link">GeForce eSports PC</a></li>
+              <li><a href="#" class="footer__link">Zenchillis Hardware</a></li>
+            </ul>
+          </div>
+          <div class="footer__link-box">
+            <h3 class="footer__heading">Grafikkarten</h3>
+            <ul class="footer__link-list">
+              <li><a href="#" class="footer__link">AMD Radeon RX 7800 XT</a></li>
+              <li><a href="#" class="footer__link">AMD Radeon RX 7900 XT</a></li>
+              <li><a href="#" class="footer__link">AMD Radeon RX 7900 XTX</a></li>
+              <li><a href="#" class="footer__link">Nvidia Geforce RTX 4070 Super</a></li>
+              <li><a href="#" class="footer__link">Nvidia GeForce RTX 4070 Ti Super</a></li>
+              <li><a href="#" class="footer__link">Nvidia GeForce RTX 4080 Super</a></li>
+              <li><a href="#" class="footer__link">Nvidia GeForce 4090</a></li>
+              <li><a href="#" class="footer__link">Nvidia GeForce RTX 5070er</a></li>
+              <li><a href="#" class="footer__link">Nvidia GeForce RTX 5080</a></li>
+              <li><a href="#" class="footer__link">Nvidia GeForce RTX 5090</a></li>
+            </ul>
+          </div>
+          <div class="footer__link-box">
+            <h3 class="footer__heading">Service</h3>
+            <ul class="footer__link-list">
+              <li><a href="#" class="footer__link">Affiliate</a></li>
+              <li><a href="#" class="footer__link">Garantie</a></li>
+              <li><a href="#" class="footer__link">News Blog</a></li>
+              <li><a href="#" class="footer__link">Kontakt</a></li>
+              <li><a href="#" class="footer__link">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="footer__link-box | order-xl-last">
+            <h3 class="footer__heading">Rechtliches</h3>
+            <ul class="footer__link-list">
+              <li><a href="#" class="footer__link">Impressum</a></li>
+              <li><a href="#" class="footer__link">AGB</a></li>
+              <li><a href="#" class="footer__link">Datenschutz</a></li>
+              <li><a href="#" class="footer__link">Konformitätserklärung</a></li>
+              <li><a href="#" class="footer__link">Energieverbrauch</a></li>
+            </ul>
+          </div>
+          <div class="footer__link-box">
+            <h3 class="footer__heading">Hilfe & Kontakt</h3>
+            <ul class="footer__link-list">
+              <li><a href="#" class="footer__link">FAQ</a></li>
+              <li><a href="#" class="footer__link">Kontakt</a></li>
+              <li><a href="#" class="footer__link">Hotline</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom | mt-4 mt-xl-5">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center">
+          <div>
+            <h4 class="footer__heading">Zahlungsmethoden</h4>
+            <ul class="d-flex align-items-center flex-wrap gap-3 mt-4">
+              <li><img src="img/vorkasse-logo.webp" class="footer__payment-logo" alt="Vorkasse logo"></li>
+              <li><img src="img/paypal-logo.webp" class="footer__payment-logo" alt="PayPal logo"></li>
+              <li><img src="img/sofort-logo.webp" class="footer__payment-logo" alt="Sofort logo"></li>
+              <li><img src="img/amazonpay-logo.webp" class="footer__payment-logo" alt="Amazon Pay logo"></li>
+              <li><img src="img/easycredit-logo.webp" class="footer__payment-logo" alt="EasyCredit logo"></li>
+              <li><img src="img/ec-logo.webp" class="footer__payment-logo" alt="EC card logo"></li>
+            </ul>
+          </div>
+          <div class="footer__trust-logo | flex-shrink-0 ms-auto mt-xl-4">
+            <img src="img/trust-pilot-logo.webp" alt="Trustpilot logo" height="33" width="117"
+              class="object-fit-contain mx-auto">
+          </div>
+          <div class="footer__contact">
+            <h4 class="footer__heading">SYSTEMTREFF HOTLINE</h4>
+            <address class="mt-3 mb-4 mb-xl-3">Unser Telefon-Support ist Montag bis Freitag von 10:00 - 15:00 Uhr für
+              Dich da. </address>
+            <a href="tel:+4923692980020" class="footer__link | d-inline-flex align-items-center gap-3"><img
+                src="img/phone-ic.webp" alt="Phone Icon" class="img-white object-fit-contain" height="14"
+                width="14">+49-2369-2980020</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <div class="container">
+        <div class="footer__copyright-wrapper | d-xl-flex align-items-center gap-xl-5">
+          <ul class="footer__social | d-flex align-items-center gap-4 flex-shrink-0 order-xl-2 justify-content-center">
+            <li>
+              <a href="#" target="_blank" aria-label="Visit our TikTok page">
+                <img src="img/tiktok-circle-icon.webp" alt="TikTok icon" class="object-fit-contain" height="44"
+                  width="44">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" aria-label="Visit our Facebook page">
+                <img src="img/fb-circle-icon.webp" alt="Facebook icon" class="object-fit-contain" height="44"
+                  width="44">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" aria-label="Visit our Instagram page">
+                <img src="img/instagram-circle-icon.webp" alt="Instagram icon" class="object-fit-contain" height="44"
+                  width="44">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" aria-label="Visit our YouTube channel">
+                <img src="img/youtube-circle-icon.webp" alt="YouTube icon" class="object-fit-contain" height="44"
+                  width="44">
+              </a>
+            </li>
+          </ul>
+          <p class="order-xl-1">Copyright 2025&copy; IT-Systemtreff GmbH | * Alle Preise inkl. gesetzlicher USt., zzgl. Versand<br
+              class="d-none d-xl-block">
+            Alle Inhalte dieses Internet Angebots unterliegen dem Urheberrecht. Jede Entnahme und Weiterverwendung auch
+            auszugsweise ist ohne vorherige Zustimmung untersagt.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+  <!-- bootstrap 5 js bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let header = document.querySelector('.header');
+      let toggleBtn = document.querySelector('.header__toggle-btn');
+
+      toggleBtn.addEventListener('click', function () {
+        header.classList.toggle('header--active');
+      });
+    });
+  </script>
+</body>
+
+</html>
