@@ -103,6 +103,7 @@ p, span, h1, h2, h3, h4, h5, h6 {
 }
 .sub-title{
   font-size: 2.5rem;
+  line-height: 1;
   font-family: var(--ff-secondary);
   font-weight: 600;
   text-transform: uppercase;
