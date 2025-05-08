@@ -238,7 +238,7 @@ p, span, h1, h2, h3, h4, h5, h6 {
 }
 @media(min-width:1200px){
   .container {
-    max-width: 144rem;
+    max-width: 1440px;
   }
   .row,.container{
     --bs-gutter-x: 8rem;
