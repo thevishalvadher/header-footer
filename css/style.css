@@ -137,7 +137,7 @@ p, span, h1, h2, h3, h4, h5, h6 {
   font-size: 1.4rem;
   margin-top: -3px !important;
   border-radius: 0;
-  min-width: 100%;
+  min-width: 14rem;
   padding: 0;
 }
 .header .dropdown-menu li:not(:last-child){
@@ -169,6 +169,24 @@ p, span, h1, h2, h3, h4, h5, h6 {
 }
 .header__main-nav-item .dropdown-toggle::after{
   display: none;
+}
+.hide-arrow .dropdown-toggle::after{
+  display: none;
+}
+.dropdown--search .form-control{
+  border-radius: 0;
+  background: var(--clr-neutral-700);
+  border: navajowhite;
+  color: var(--clr-neutral-0);
+  font-size: 1.4rem;
+  padding: 1rem 1.4rem;
+}
+.dropdown--search .form-control::placeholder{
+  color: rgba(255, 255, 255, 0.5);
+}
+.dropdown--search .dropdown-menu{
+  min-width: 28rem;
+  margin-top: 0 !important;
 }
 /* =============== FOOTER =============== */
 .footer{
@@ -204,9 +222,23 @@ p, span, h1, h2, h3, h4, h5, h6 {
   font-size: 1.8rem;
   font-weight: 600;
 }
+.footer__social a{
+  height: 4.4rem;
+  width: 4.4rem;
+  border-radius: 50%;
+  border: 2px solid var(--clr-neutral-0);
+  display: inline-flex;
+  transition: all 0.3s;
+  justify-content: center;
+  align-items: center;
+}
+.footer__social a:hover{
+  background-color: var(--clr-primary-400);
+  border-color: var(--clr-primary-400);
+}
 @media(min-width:1200px){
   .container {
-    max-width: 140rem;
+    max-width: 144rem;
   }
   .row,.container{
     --bs-gutter-x: 8rem;
@@ -276,11 +308,6 @@ p, span, h1, h2, h3, h4, h5, h6 {
   }
   .header__main-nav-list{
     gap: 2rem;
-  }
-}
-@media(max-width:575.98px){
-  html{
-    font-size: 60%;
   }
 }
 @media(max-width:1199.98px){
@@ -441,5 +468,20 @@ p, span, h1, h2, h3, h4, h5, h6 {
   }
   .partner-nvidia-logo{
     height: 2.5rem;
+  }
+}
+@media(max-width:991.98px){
+  .container{
+    max-width: 100%;
+  }
+}
+@media(max-width:575.98px){
+  html{
+    font-size: 60%;
+  }
+}
+@media(max-width:375.98px){
+  html{
+    font-size: 52%;
   }
 }
